@@ -1,11 +1,11 @@
 ## Usage
-`import NativeRouter from 'native-router';`
+`import NativeRouting from 'native-routing';`
 
 ```
 export default class MyApp extends Component {
   render() {
     return (
-      <NativeRouter
+      <NativeRouting
         routes={[
             { index: Index },
             { login: Login },
