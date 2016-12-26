@@ -3,9 +3,9 @@ import { Navigator } from 'react-native';
 import renderScene, { setup, currentRoute, pushRoute, popRoute } from './routes.js';
 import HomeLayout from './layout.js';
 
-export let currentRoute = currentRoute;
-export let pushRoute = pushRoute;
-export let popRoute = popRoute;
+exports.currentRoute = currentRoute;
+exports.pushRoute = pushRoute;
+exports.popRoute = popRoute;
 
 export default class App extends Component {
     constructor(props) {
