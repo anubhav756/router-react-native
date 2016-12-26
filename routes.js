@@ -43,7 +43,7 @@ export const pushRoute = function (routeId, routeParams, hideNavBar) {
 		});
 	}
 	else
-		navigator.push({ id: routeId, index: index++, title, hideNavBar, params: routeParams });
+		navigator.push({ id: routeId, index: index++, hideNavBar, params: routeParams });
 }
 export const popRoute = function (n = 1) {
 	if (n === 0) {
