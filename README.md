@@ -8,13 +8,13 @@
 - `onClose`
 - `leftPanelOffset`
 
-## Exported as props
-- `toggleLeftPanel`
-- `showingLeftPanel`
-
 ## Exports
 - `currentRoute`
 - `pushRoute`
 - `popRoute`
+- `toggleLeftPanel`
+- `showingLeftPanel`
+
+## Props for `navBar` & `leftPanel`
 - `toggleLeftPanel`
 - `showingLeftPanel`
