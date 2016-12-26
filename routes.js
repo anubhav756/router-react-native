@@ -8,9 +8,9 @@ export let currentRoute;
 let routeComponentMap = {};
 let defautRouteComponent;
 
-export const setup = (routeMap, defaultComp) => {
+export const setup = (routeMap, defaultRouteName) => {
 	routeComponentMap = routeMap;
-	defaultRouteComponent = defaultComp ? defaultComp : routeMap[0];
+	defaultRouteComponent = routeMap[defaultRouteName];
 };
 
 export default function (nextRoute, nav) {
