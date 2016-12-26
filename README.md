@@ -20,6 +20,7 @@ export default class MyApp extends Component {
         leftPanel={<LeftPanelComponent />}
         onOpen={() => { alert('Left panel opened!') }}
         onClose={() => { alert('Left panel closed!') }}
+        leftPanelOffset={100}
         />
     );
   }
