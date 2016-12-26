@@ -13,7 +13,7 @@ export default class MyApp extends Component {
             { users: Users },
                 ...
             { defaultRouteName: DefaultRouteComponent }
-            ]}
+        ]}
         defaultRoute='defaultRouteName'
         initialRoute='index'
         navBar={<NavBarComponent />}
