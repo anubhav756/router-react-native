@@ -24,9 +24,9 @@ export default class MyApp extends Component {
     );
   }
 }
-```
 
-AppRegistry.registerComponent('chumzmobile', () => chumzmobile);`
+AppRegistry.registerComponent('MyApp', () => MyApp);`
+```
 
 ## Props
 - `routes`
@@ -48,3 +48,5 @@ AppRegistry.registerComponent('chumzmobile', () => chumzmobile);`
 ## Props for `navBar` & `leftPanel`
 - `toggleLeftPanel`
 - `showingLeftPanel`
+
+[native-routing](https://www.npmjs.com/package/native-routing) NPM module
