@@ -1,6 +1,6 @@
 {
   "name": "native-routing",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Routing + Navigation Bar + Left Panel for react native apps",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/anubhav756/native-routing/issues"
   },
-  "homepage": "https://github.com/anubhav756/native-routing#readme"
+  "homepage": "https://github.com/anubhav756/native-routing#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-native": "^0.39.2",
+    "react-native-drawer": "^2.3.0"
+  }
 }
