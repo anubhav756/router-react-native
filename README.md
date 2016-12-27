@@ -1,11 +1,11 @@
 ## Usage
-`import NativeRouting from 'native-routing';`
+`import Router from 'router-react-native';`
 
 ```
 export default class MyApp extends Component {
   render() {
     return (
-      <NativeRouting
+      <Router
         routes={[
             { index: Index },
             { login: Login },
@@ -29,7 +29,7 @@ export default class MyApp extends Component {
 AppRegistry.registerComponent('MyApp', () => MyApp);`
 ```
 ## Change routes
-`import { pushRoute, popRoute } from 'native-routing';`
+`import { pushRoute, popRoute } from 'router-react-native';`
 
 ```
 handleNextClick() {
@@ -71,4 +71,4 @@ handleBackClick() {
 - `showingLeftPanel`: Whether left panel is visible or not (`true/false`)
 
 
-[native-routing](https://www.npmjs.com/package/native-routing) NPM module
+[router-react-native](https://www.npmjs.com/package/router-react-native) NPM module
