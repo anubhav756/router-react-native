@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native';
-import renderScene, { setup, currentRoute, pushRoute, popRoute } from './routes.js';
-import HomeLayout from './layout.js';
+import renderScene, { setup } from './routes';
+import HomeLayout from './layout';
 
-exports.currentRoute = currentRoute;
-exports.pushRoute = pushRoute;
-exports.popRoute = popRoute;
+export { currentRoute, pushRoute, popRoute } from './routes';
 
 export default class App extends Component {
     constructor(props) {
