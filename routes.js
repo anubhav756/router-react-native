@@ -5,7 +5,7 @@ let navigator;
 let index = 1;
 export let currentRoute;
 
-let routeComponentMap = {};
+let routeComponentMap = [];
 let defautRouteComponent;
 
 export const setup = (routeMap, defaultRouteName) => {
@@ -19,9 +19,12 @@ export default function (nextRoute, nav) {
 	currentRoute = nextRoute;
 
 	let content;
-	if (routeComponentMap[currentRoute.id])
-		content = React.createElement(routeComponentMap[currentRoute.id]);
-	else {
+	routeComponentMap.forEach(route => {
+		const key = Object.keys(route)[0];
+		if (currentRoute.id === key)
+			content = React.createElement(route[key]);
+	});
+	if (!content) {
 		currentRoute.hideNavBar = true;
 		return React.createElement(defaultRouteComponent);
 	}

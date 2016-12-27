@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, BackAndroid } from 'react-native';
 import Drawer from 'react-native-drawer';
-import { route } from './routes';
+import { currentRoute } from './routes';
 
 export default class HomeLayout extends Component {
 	constructor(props) {
@@ -32,7 +32,7 @@ export default class HomeLayout extends Component {
 			}.bind(this));
 	}
 	render() {
-		if (route.hideNavBar) {
+		if (currentRoute.hideNavBar) {
 			if (this.state.showLeftPanel)
 				this.setState({ showLeftPanel: false });
 			if (this.state.showLeftPanelBackGround)
