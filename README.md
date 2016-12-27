@@ -9,7 +9,6 @@ export default class MyApp extends Component {
         routes={[
             { index: Index },
             { login: Login },
-            { register: Register },
             { users: Users },
                 ...
             { defaultRouteName: DefaultRouteComponent }
