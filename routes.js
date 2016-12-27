@@ -10,7 +10,11 @@ let defautRouteComponent;
 
 export const setup = (routeMap, defaultRouteName) => {
 	routeComponentMap = routeMap;
-	defaultRouteComponent = routeMap[defaultRouteName];
+	routeMap.forEach(route => {
+		const key = Object.keys(route)[0];
+		if (key === defaultRouteName)
+			defaultRouteComponent = route[key];
+	});
 };
 
 export default function (nextRoute, nav) {
