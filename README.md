@@ -28,6 +28,22 @@ export default class MyApp extends Component {
 
 AppRegistry.registerComponent('MyApp', () => MyApp);`
 ```
+## Change routes
+`import { pushRoute, popRoute } from 'native-routing';`
+
+```
+handleNextClick() {
+    const hideNavBar = true;
+    const routeParameters = { ... };
+        ...
+
+    pushRoute('routeName', routeParameters, hideNavBar);
+}
+
+handleBackClick() {
+    popRoute();
+}
+```
 
 ## Props
 - `routes`: An array to map route ids with route's component
