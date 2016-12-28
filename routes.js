@@ -55,7 +55,7 @@ export const pushRoute = function (routeId, routeParams, hideNavBar) {
 export const popRoute = function (n = 1) {
 	if (n === 0) {
 		navigator.popToTop();
-		index = 0;
+		index = 1;
 		return true;
 	}
 	if (navigator && navigator.getCurrentRoutes().length > 1) {
