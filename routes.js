@@ -41,7 +41,7 @@ export default function (nextRoute, nav) {
 	)
 }
 
-export const pushRoute = function (routeId, routeParams, hideNavBar) {
+export const pushRoute = function (routeId, routeParams = {}, hideNavBar) {
 	const previousRoutes = navigator.getCurrentRoutes().filter(item => item.id === routeId);
 	if (previousRoutes.length) {
 		const newRoute = { id: previousRoutes[0].id, index: previousRoutes[0].index, hideNavBar, params: routeParams };
