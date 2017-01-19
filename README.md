@@ -64,10 +64,12 @@ handleBackClick() {
     - `params`: Optional routing parameters
     - `hideNavBar`: `true` for hiding the navigation bar for this new route
 - `popRoute (n)`: Go back `n` routes (`1` by default). `0` to clear history, and go to initial route
+- `updateLayoutData (Object)`: Update the `layoutData` prop of navBar/leftPanel components
 
 ## Props for `navBar` & `leftPanel`
 - `toggleLeftPanel()`: Toggle left panel
 - `showingLeftPanel`: Whether left panel is visible or not (`true/false`)
+- `layoutData`: Any data which needs to be sent to the layout components (navBar/leftPanel)
 
 
 [router-react-native](https://www.npmjs.com/package/router-react-native) NPM module
