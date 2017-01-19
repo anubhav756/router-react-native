@@ -4,23 +4,28 @@ import { BackAndroid, View } from 'react-native';
 let navigator;
 let index = 1;
 export let currentRoute;
+export let updateLayoutData;
 
 let routeComponentMap = [];
 let defautRouteComponent;
 
-export const setup = (routeMap, defaultRouteName) => {
+const setup = (routeMap, defaultRouteName, _updateLayoutData) => {
 	routeComponentMap = routeMap;
 	routeMap.forEach(route => {
 		const key = Object.keys(route)[0];
 		if (key === defaultRouteName)
 			defaultRouteComponent = route[key];
 	});
+	updateLayoutData = _updateLayoutData;
 };
 
 export default function (nextRoute, nav) {
 	if (!navigator)
 		navigator = nav;
+
 	currentRoute = nextRoute;
+	if (currentRoute.index === 0)
+		setup(currentRoute.routes, currentRoute.defaultRoute, _updateLayoutData);
 
 	let content;
 	routeComponentMap.forEach(route => {

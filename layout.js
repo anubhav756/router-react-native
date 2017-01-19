@@ -45,7 +45,8 @@ export default class HomeLayout extends Component {
 					{
 						React.cloneElement(this.props.navBar, {
 							toggleLeftPanel: this.toggleLeftPanel.bind(this),
-							showingLeftPanel: this.state.showLeftPanel
+							showingLeftPanel: this.state.showLeftPanel,
+							layoutData: this.props.layoutData
 						})
 					}
 				</View>
@@ -57,7 +58,8 @@ export default class HomeLayout extends Component {
 							content={
 								React.cloneElement(this.props.leftPanel, {
 									toggleLeftPanel: this.toggleLeftPanel.bind(this),
-									showingLeftPanel: this.state.showLeftPanel
+									showingLeftPanel: this.state.showLeftPanel,
+									layoutData: this.props.layoutData
 								})
 							}
 							open={this.state.showLeftPanel}
