@@ -1,3 +1,6 @@
+## Install
+`npm i router-react-native`
+
 ## Usage
 `import Router from 'router-react-native';`
 
