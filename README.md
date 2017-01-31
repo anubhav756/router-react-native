@@ -28,7 +28,7 @@ export default class MyApp extends Component {
   }
 }
 
-AppRegistry.registerComponent('MyApp', () => MyApp);`
+AppRegistry.registerComponent('MyApp', () => MyApp);
 ```
 ## Change routes
 `import { pushRoute, popRoute } from 'router-react-native';`

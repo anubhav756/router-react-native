@@ -1,6 +1,6 @@
 {
   "name": "router-react-native",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Routing + Navigation Bar + Left Panel for react native apps",
   "main": "index.js",
   "scripts": {
